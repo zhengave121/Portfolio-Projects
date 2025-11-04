@@ -10,7 +10,7 @@ order by 3,4
 --order by 3,4
 --limit 10
 
---Select data that we will be using 
+--Select data that I will be using 
 Select location, date, total_cases, new_cases, total_deaths, population
 From dapp-476506.covid.covid_deaths
 where continent is not null
@@ -80,7 +80,7 @@ and dea.date = vac.date
 where dea.continent is not null
 order by 2,3
 
---Use CTE to perform Calculation on Partition By in previous query
+--Use CTE to perform calculation on partition by in the previous query
 With PopvsVac as 
 (
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
